@@ -4,7 +4,6 @@ function filtrarFavoritos() {
 
     cajas.forEach(caja => {
         let texto = caja.textContent.toLowerCase();
-        // Si el texto coincide, se muestra; si no, se oculta
         if (texto.includes(input)) {
             caja.style.display = "block";
         } else {
