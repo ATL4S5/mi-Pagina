@@ -1,0 +1,44 @@
+body {
+    background-image: url('../imagen/texture.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.caja-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.caja-img:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.bg-tanques { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagen/tanque.jpg'); }
+.bg-musica { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagen/musica.jpg'); }
+.bg-videojuegos { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagen/videojuegos.jpg'); }
+
+#buscador {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+}

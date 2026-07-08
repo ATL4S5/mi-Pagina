@@ -1,0 +1,25 @@
+/* Estilo base para todas las secciones */
+.contenido-seccion {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.titulo-seccion {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+/* Clases específicas por tema */
+.tanques-tema { border-left: 5px solid #e74c3c; }
+.tanques-tema .titulo-seccion { border-bottom: 2px solid #e74c3c; }
+
+.musica-tema { border-left: 5px solid #3498db; }
+.musica-tema .titulo-seccion { border-bottom: 2px solid #3498db; }
+
+.juegos-tema { border-left: 5px solid #2ecc71; }
+.juegos-tema .titulo-seccion { border-bottom: 2px solid #2ecc71; }
+
+.btn-volver { margin-bottom: 20px; display: inline-block; }

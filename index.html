@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nido de Ratas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-3 fw-bold">El Nido de Ratas</h1>
+            <p class="lead">Todo esto para tener buena nota en sistemas operativos</p>
+        </header>
+
+        <section id="yt" class="text-center mb-5">
+            <h2 class="mb-3">Mi Rincón en YouTube</h2>
+            <a href="https://www.youtube.com/@Atlas12001" target="_blank" class="btn btn-danger btn-lg">Ir a YouTube</a>
+        </section>
+
+        <section id="favoritos">
+            <h2 class="text-center mb-4">Cosas que me gustan</h2>
+            <input type="text" id="buscador" class="form-control mb-4" placeholder="Busca en tus favoritos..." onkeyup="filtrarFavoritos()">
+            
+            <div class="row g-4" id="contenedor-favoritos">
+                <div class="col-md-4">
+                    <a href="Tanques.html" class="caja-img bg-tanques text-white text-decoration-none">Tanques</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Musica.html" class="caja-img bg-musica text-white text-decoration-none">Música</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Videojuegos.html" class="caja-img bg-videojuegos text-white text-decoration-none">Videojuegos</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function filtrarFavoritos() {
+            let input = document.getElementById('buscador').value.toLowerCase();
+            let columnas = document.querySelectorAll('.col-md-4');
+            columnas.forEach(col => {
+                col.style.display = col.textContent.toLowerCase().includes(input) ? "block" : "none";
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
